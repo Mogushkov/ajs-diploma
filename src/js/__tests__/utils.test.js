@@ -18,3 +18,15 @@ test('tile type center', () => {
   expect(calcTileType(18, 8)).toBe('center');
   expect(calcTileType(45, 8)).toBe('center');
 });
+
+test('health level', () => {
+  expect(calcHealthLevel(10)).tobe('critical');
+});
+
+test('health level', () => {
+  expect(calcHealthLevel(45)).tobe('normal');
+});
+
+test('health level', () => {
+  expect(calcHealthLevel(55)).tobe('high');
+});
